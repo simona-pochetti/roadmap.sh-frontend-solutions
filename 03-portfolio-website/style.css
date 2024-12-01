@@ -1,0 +1,82 @@
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.logo img {
+    margin: 5px;
+}
+
+.logo h2 {
+    margin: 5px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    list-style-type: none;
+}
+
+.nav-menu li {
+    margin: 15px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    margin-bottom: 0px;
+}
+
+.main-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-between;
+    border: 2px solid black;
+}
+
+.main-content section {
+    flex: 1;
+    padding: 20px;
+}
+
+.experience-section {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.reviews h2 {
+    margin: 5px;
+}
+
+.blockquotes {
+    display: flex;
+    justify-content: center;
+}
+
+blockquote {
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
