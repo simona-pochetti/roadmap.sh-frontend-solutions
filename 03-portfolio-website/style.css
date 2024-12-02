@@ -1,16 +1,19 @@
 body {
   margin-left: 20px;
   margin-right: 20px;
+  font-family: Calibri, Arial, sans-serif;
 }
 
 nav {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin: 20px;
 }
@@ -30,6 +33,10 @@ nav {
   list-style-type: none;
 }
 
+.nav-menu a {
+  font-size: large;
+  font-weight: bold;
+}
 .nav-menu li {
   margin: 15px;
 }
@@ -52,7 +59,8 @@ nav {
 
 .main-content {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: stretch;
   justify-content: space-between;
   border: 2px solid black;
   margin-bottom: 20px;
@@ -64,8 +72,8 @@ nav {
 }
 
 .experience-section {
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
 }
 
 .reviews h2 {
@@ -74,6 +82,7 @@ nav {
 
 .blockquotes {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -89,4 +98,29 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+  }
+
+  .logo {
+    flex-direction: row;
+  }
+
+  .main-content {
+    flex-direction: row;
+  }
+
+  .experience-section {
+    border-bottom: none;
+    border-top: none;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+
+  .blockquotes {
+    flex-direction: row;
+  }
 }
