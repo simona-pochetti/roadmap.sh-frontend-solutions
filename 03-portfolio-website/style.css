@@ -124,3 +124,10 @@ footer {
     flex-direction: row;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #ffffff;
+  }
+}
