@@ -1,0 +1,144 @@
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 5px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+}
+
+.email-input {
+  border: 1px solid red;
+}
+
+.form-error {
+  font-size: 12px;
+  color: red;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.password-input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.password-input-container input {
+  border: none;
+  flex: 1;
+  padding: 0px;
+}
+
+.password-input-container button {
+  background: white;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.hide-toggle {
+  transition: filter 0.3s ease;
+}
+
+.hide-toggle:hover {
+  filter: invert(100%);
+}
+
+.update-button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.update-button:hover {
+  background-color: darkgrey;
+  color: black;
+  border: 1px solid black;
+}
+
+/* Progress styles */
+.profile-progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.completion-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  border: 3px solid darkgray;
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.profile-progress h4 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+
+.list-completion {
+  padding: 20px;
+  background-color: #dedede;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+}

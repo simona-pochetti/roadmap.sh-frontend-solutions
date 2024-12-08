@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datepicker ui</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <section class="container">
+    <div class="registration-form">
+      <form action="#">
+        <div class="form-group">
+          <form action="" class="form">
+            <label for="name">Full Name</label>
+            <div class="flex-container">
+              <input type="text" name="text" placeholder="What should we call you?" required aria-required="true" />
+            </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <div class="flex-container">
+            <input class="email-input" for="email" name="email" placeholder="john@doe.com" required
+              aria-invalid="true" />
+          </div>
+          <div class="form-error" role="alert">Email is already taken</div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Enter Password</label>
+          <div class="password-input-container">
+            <input type="password" name="password" placeholder="xxxxxxxx" required aria-required="true" />
+            <button type="button">
+              <img class="hide-toggle" src="images/hide-toggle.svg">
+            </button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <div class="password-input-container">
+            <input type="password" name="password" placeholder="xxxxxxxx" required aria-required="true" />
+            <button type="button">
+              <img class="hide-toggle" src="images/hide-toggle.svg">
+            </button>
+          </div>
+        </div>
+
+        <button type="submit" class="update-button">Update Profile</button>
+      </form>
+    </div>
+
+    <div class="profile-progress">
+      <div class="completion-circle">65%</div>
+      <h4>Profile Completeness</h4>
+      <ul class="list-completion">
+        <li class="completed">Create Account</li>
+        <li class="completed">Update Roadmap Progress</li>
+        <li class="completed">Setup Public Profile</li>
+        <li>Complete your first project</li>
+        <li>Invite your Friends</li>
+      </ul>
+    </div>
+  </section>
+</body>
+
+</html>
